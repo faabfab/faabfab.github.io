@@ -15,6 +15,10 @@ body {
   color: #9356DC !important;
 }
 
+.invisible {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -116,12 +120,63 @@ header {
   font-weight: normal;
 }
 
-.restaurent-card img {
-  width: 100%;
+main {
+  background-color: #F3F3F3;
+  padding-bottom: 45px !important;
 }
 
+.restaurent-card {
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.restaurent-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 175px;
+}
+
+.restaurent-card-new {
+  position: absolute;
+  right: 0px;
+  margin: 12px 32px;
+  padding: 5px 10px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  font-size: 0.9em;
+}
+
+.restaurent-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.restaurent-card-text h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.restaurent-card-text p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.restaurent-card-heart {
+  margin: 20px;
+}
 .restaurent-card-heart svg {
-  width: 1em;
+  width: 1.5em;
+  stroke-width: 1px;
+}
+.restaurent-card-heart .selected {
+  stroke-width: 0px;
+  fill: linear-gradient(#FF79DA, #9356DC);
 }
 
 .button {

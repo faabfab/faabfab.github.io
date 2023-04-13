@@ -1,7 +1,52 @@
-.restaurent-card img{
-    width: 100%;
+.restaurent-card{
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    & img{
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 175px;
+    }
 }
 
-.restaurent-card-heart svg{
-    width: 1em;
+.restaurent-card-new{
+    position: absolute;
+    right: 0px;
+    margin: 12px 32px;
+    padding: 5px 10px;
+    background-color: $vert;
+    color: $vert-text;
+    border-radius: 2px;
+    font-size: 0.9em;
+    
+}
+.restaurent-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px
+}
+.restaurent-card-text{
+    & h3{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    & p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.restaurent-card-heart{
+    margin: 20px;
+    & svg{
+        width: 1.5em;
+        stroke-width: 1px;
+    }
+    & .selected{
+        stroke-width: 0px;
+        fill: linear-gradient($rose, $violet);
+    }
 }
