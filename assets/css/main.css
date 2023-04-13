@@ -3,6 +3,18 @@ body {
   margin: 0px;
 }
 
+.block-padding {
+  padding: 30px 20px 30px 20px;
+}
+
+.shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.violet {
+  color: #9356DC !important;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -66,6 +78,44 @@ header {
   justify-content: center;
 }
 
+.nav__h2 {
+  margin-bottom: 35px;
+}
+
+.nav__ol {
+  list-style: none;
+  counter-reset: section;
+}
+
+.nav__li {
+  height: 72px;
+  margin-bottom: 25px;
+  margin-left: -30px;
+  background-color: #F3F3F3;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.nav__li i {
+  font-size: 1.2em;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #7E7E7E;
+}
+
+.nav__li:before {
+  content: counter(section, decimal) " ";
+  counter-increment: section;
+  margin-left: -12px;
+  padding: 3px 8px;
+  font-size: 0.9em;
+  background-color: #9356DC;
+  border-radius: 20px;
+  color: white;
+  font-weight: normal;
+}
+
 .restaurent-card img {
   width: 100%;
 }
@@ -78,7 +128,6 @@ header {
   height: 50px;
   border-radius: 25px;
   border-style: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   padding-left: 25px;
   padding-right: 25px;
   font-size: 1em;
