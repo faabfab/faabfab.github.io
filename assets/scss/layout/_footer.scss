@@ -1,0 +1,23 @@
+footer{
+    background-color: $header-grey-font;
+    & p{
+        font-family: 'Shrikhand', cursive;
+        color:white;
+        margin: 0px;
+        font-size: 1.1em;
+    }
+    & ul{
+        list-style: none;
+        padding-left: 0px;
+        & li{
+            padding-bottom: 10px;
+            & i{
+                padding-right: 10px;
+                font-size: 0.8em;
+            }
+        }
+    }
+    & a{
+        color:white;
+    }
+}
