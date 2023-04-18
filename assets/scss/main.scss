@@ -1,6 +1,6 @@
 @import 'abstracts/variables';
 
-@import 'base/reset';
+@import 'base/base';
 @import 'base/typography';
 
 @import 'layout/header';
@@ -10,3 +10,5 @@
 
 @import 'components/card';
 @import 'components/buttons';
+
+@import 'pages/restaurent';

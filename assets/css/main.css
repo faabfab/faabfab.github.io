@@ -42,6 +42,7 @@ header {
 
 .header__logo {
   background-color: white;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +60,6 @@ header {
   background-color: #EAEAEA;
   height: 50px;
   margin: 0px;
-  margin-top: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,10 @@ header {
 .header__button {
   display: flex;
   justify-content: center;
+}
+
+.header_restaurent__img {
+  height: 275px;
 }
 
 .nav__h2 {

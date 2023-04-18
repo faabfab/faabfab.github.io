@@ -4,6 +4,7 @@ header{
 }
 .header__logo{
     background-color: white;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +21,6 @@ header{
     background-color: $header-grey;
     height: 50px;
     margin: 0px;
-    margin-top: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,4 +44,9 @@ header{
 .header__button{
     display: flex;
     justify-content: center;
+}
+
+//Restaurents
+.header_restaurent__img{
+    height: 275px;
 }
