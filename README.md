@@ -16,5 +16,26 @@
 * [x] Commandes Git `git commit git add git push & git pull git status `
 
 ###Issus du guide d'étape
+***
+***
 
-* [ ] Pour le css **DRY** Don’t repeat yourself”
+* [ ] Pour le css **DRY** "Don’t repeat yourself"
+
+##Session 2
+
+###A corriger :
+* [x] Enlever les noms de balises dans les noms de classes remplacer avec un nom qui a du sens(p->titre par exple)
+* [x] Dans le header mettre un lien href:geo sur le localisation
+* [x] Mettre section au lieu de nav après le header
+- [ ] Mettre des balises picture sur les images même si y'en a qu'une
+- [ ] Remplacer div par article dans main
+* [x] Restau**rant** pas rent tout changer
+* [x] mettre un span pour 'Nouveau'
+* [x] Footer mettre une balise nav
+* [x] Mettre un h3 pour le titre du footer au lieu de p
+* [x] Enlever les restau*rent* dans la css
+- [ ] Faire effet sur le coeur (se rempli petit à petit avec le dégrader)
+- [ ] Ecrire les commits en anglais
+
+##A faire :
+- [ ] Monter les 4 pages des restaurants

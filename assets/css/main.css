@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 header {
@@ -40,7 +40,9 @@ header {
   padding-bottom: 50px;
 }
 
-.header__logo {
+.header__site_title {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.03em;
   background-color: white;
   position: relative;
   display: flex;
@@ -48,15 +50,9 @@ header {
   align-items: center;
   height: 63px;
   box-shadow: 0px 2px 4px #B9B9B9;
+  margin: 0px;
 }
-
-.header__img {
-  width: 162px;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.header__p-location {
+.header__location {
   background-color: #EAEAEA;
   height: 50px;
   margin: 0px;
@@ -64,26 +60,25 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+}
+.header__location a {
   color: #353535;
 }
-.header__p-location i {
+.header__location i {
   padding-right: 1em;
 }
-
-.header__h1 {
+.header__title {
   text-align: center;
   margin: 35px 60px 10px 60px;
 }
-
-.header__p {
+.header__description {
   font-weight: 300;
   font-size: 1.1em;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
 }
-
-.header__button {
+.header__explore_button {
   display: flex;
   justify-content: center;
 }
@@ -92,16 +87,14 @@ header {
   height: 275px;
 }
 
-.nav__h2 {
+.use__h2 {
   margin-bottom: 35px;
 }
-
-.nav__ol {
+.use__list {
   list-style: none;
   counter-reset: section;
 }
-
-.nav__li {
+.use__list_item {
   height: 72px;
   margin-bottom: 25px;
   margin-left: -30px;
@@ -111,14 +104,13 @@ header {
   align-items: center;
   font-weight: bold;
 }
-.nav__li i {
+.use__list_item i {
   font-size: 1.2em;
   margin-left: 25px;
   margin-right: 25px;
   color: #7E7E7E;
 }
-
-.nav__li:before {
+.use__list_item:before {
   content: counter(section, decimal) " ";
   counter-increment: section;
   margin-left: -12px;
@@ -138,7 +130,7 @@ main {
 footer {
   background-color: #353535;
 }
-footer p {
+footer .footer__homelink {
   font-family: "Shrikhand", cursive;
   color: white;
   margin: 0px;
@@ -159,12 +151,12 @@ footer a {
   color: white;
 }
 
-.restaurent-card {
+.card {
   border-radius: 15px;
   background-color: white;
   margin-bottom: 20px;
 }
-.restaurent-card img {
+.card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -172,8 +164,7 @@ footer a {
   border-top-right-radius: 15px;
   height: 175px;
 }
-
-.restaurent-card-new {
+.card__new {
   position: absolute;
   right: 0px;
   margin: 12px 32px;
@@ -183,32 +174,29 @@ footer a {
   border-radius: 2px;
   font-size: 0.9em;
 }
-
-.restaurent-card-container {
+.card__container {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
   margin-left: 10px;
   padding-bottom: 10px;
 }
-
-.restaurent-card-text h3 {
+.card__text h3 {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-.restaurent-card-text p {
+.card__text p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.restaurent-card-heart {
+.card__heart {
   margin: 20px;
 }
-.restaurent-card-heart svg {
+.card__heart svg {
   width: 1.5em;
   stroke-width: 1px;
 }
-.restaurent-card-heart .selected {
+.card__heart .selected {
   stroke-width: 0px;
   fill: linear-gradient(#FF79DA, #9356DC);
 }
