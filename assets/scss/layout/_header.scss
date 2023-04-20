@@ -44,6 +44,10 @@ header{
     &__explore_button{
         display: flex;
         justify-content: center;
+        & a{
+            display: flex;
+            align-items: center;
+        }
     }
 }
 

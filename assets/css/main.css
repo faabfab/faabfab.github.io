@@ -13,8 +13,12 @@ a {
   padding: 30px 20px 30px 20px;
 }
 
-.shadow {
+.shadow, .button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.shadow2, .button:focus, .button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .violet {
@@ -81,6 +85,10 @@ header {
 .header__explore_button {
   display: flex;
   justify-content: center;
+}
+.header__explore_button a {
+  display: flex;
+  align-items: center;
 }
 
 .header_restaurent__img {
@@ -190,15 +198,40 @@ footer a {
   margin-bottom: 5px;
 }
 .card__heart {
-  margin: 20px;
+  position: absolute;
+  right: 0px;
+  margin-right: 40px;
+  margin-top: 200px;
+  z-index: 500;
 }
-.card__heart svg {
-  width: 1.5em;
-  stroke-width: 1px;
+.card__heart_checkbox {
+  display: inline;
+  position: relative;
+  cursor: pointer;
 }
-.card__heart .selected {
-  stroke-width: 0px;
-  fill: linear-gradient(#FF79DA, #9356DC);
+.card__heart_checkbox input[type=checkbox] {
+  visibility: hidden;
+}
+.card__heart_checkbox-check {
+  background-image: url("../../assets/images/Vector.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s ease-out;
+}
+.card__heart_checkbox-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.card__heart_checkbox input:checked ~ .card__heart_checkbox-check {
+  background-image: url("../../assets/images/Vector2.svg");
+}
+.card__heart_checkbox input:checked ~ .card__heart_checkbox-check:after {
+  display: block;
 }
 
 .button {
@@ -210,4 +243,8 @@ footer a {
   font-size: 1em;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
+  transition: all 0.5s ease-out;
+}
+.button:focus, .button:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */
