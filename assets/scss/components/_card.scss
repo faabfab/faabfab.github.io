@@ -37,43 +37,7 @@
             margin-bottom: 5px;
         }
     }
-    &__heart{
-        position: absolute;
-        right: 0px;
-        margin-right: 40px;
-        margin-top: 200px;
-        z-index: 500;
-        &_checkbox {
-            display: inline;
-            position: relative;
-            cursor: pointer;
-            &-check {
-                background-image: url('../../assets/images/Vector.svg');
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 25px;
-                width: 25px;
-                transition: all 0.5s ease-out;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                }
-            }
-            
-            & input[type="checkbox"] {
-                visibility: hidden;
-                &:checked ~ .card__heart_checkbox-check {
-                    background-image: url('../../assets/images/Vector2.svg');
-                    &:after {
-                        display: block;
-                    }
-                }
-            }k
-        }
-    }
-     
+    
 }
+     
 

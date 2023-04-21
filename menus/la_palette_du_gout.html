@@ -9,42 +9,172 @@
         <script src="https://kit.fontawesome.com/c211974a1b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header_restaurent">
-            <div class="header__logo">
-                <img src="../assets/images/logo/ohmyfood.png" alt="logo Ohmyfood" class="header__img">
-            </div>
-            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="header_restaurent__img">
-            <div class="header_restaurent_name">
-                <h1>La palette du goût</h1>
-                <div class="header_restaurent_hart">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.7206 2.40576L12.7208 2.40551C14.7226 0.15233 17.9035 -0.169451 20.0243 1.80187C22.5186 4.1243 22.656 8.32326 20.4123 10.8492L20.4122 10.8493L12.0978 20.2148C11.7596 20.5956 11.2372 20.5956 10.899 20.2148L2.5848 10.8495C0.34506 8.32357 0.482456 4.1245 2.97664 1.80201C5.09762 -0.169649 8.28271 0.152585 10.2799 2.40514L10.2805 2.40576L11.127 3.35732L11.5005 3.77727L11.8741 3.35732L12.7206 2.40576Z" stroke="#101010"/>
-                    </svg>
+        <header class="restaurant_header">
+            <h1 class="header__site_title">ohmyfood</h1>
+            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="restaurant_header__picture">
+            <hgroup class="restaurant_header__top block-padding">
+                <h2 class="restaurant_header__name">La palette du goût</h2>
+                <div class="heart heart__restaurant_position">
+                    <label class="heart_checkbox">
+                        <input type="checkbox" />
+                        <span class="heart_checkbox-check"></span>
+                    </label>
                 </div>
-            </div>
+            </hgroup>
         </header>
-        <main>
-            <secion class="entrees">
-                <h2>Entrées</h2>
-            </secion>
-            <secion class="Plats">
-                <h2>Plats</h2>
-            </secion>
-            <secion class="Desserts">
-                <h2>Desserts</h2>
-            </secion>
-            <div class="header__button">
-                <button class="button shadow">Commander</button>
+        <main class="block-padding menu">
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Entrées</h3>
+                <hr class="restaurant_menu__separation">
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Fricassée d'escargots</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Au piment d'Espelette</p>
+                                    <p class="menu_checkbox__price">25€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Foie gras de canard mi-cuit</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Et ses copeaux de truffe noire</p>
+                                    <p class="menu_checkbox__price">35€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Œuf au plat</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Assaisonné à la truffe sur lit de caviar</p>
+                                    <p class="menu_checkbox__price">20€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Plats</h3>
+                <hr class="restaurant_menu__separation">
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Filet de bœuf aux herbes</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Accompagné de sa ribambelle de légumes</p>
+                                    <p class="menu_checkbox__price">40€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Parmentier de queue de bœuf</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">À la truffe noire sur sa purée de panais</p>
+                                    <p class="menu_checkbox__price">35€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Filet de turbot</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Aux agrumes</p>
+                                    <p class="menu_checkbox__price">44€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Desserts</h3>
+                <hr class="restaurant_menu__separation">
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Paris-Brest</h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Revisité</p>
+                                    <p class="menu_checkbox__price">18€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Macaron au chocolat d'exception </h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Et glace à la vanille de Madagascar</p>
+                                    <p class="menu_checkbox__price">22€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="restaurant_menu__items">
+                    <div class="restaurant_menu__item shadow">
+                        <label class="menu_checkbox">
+                            <div class="menu_checkbox__text">
+                                <h4 class="menu_checkbox__name">Mousse au chocolat </h4>
+                                <div class="menu_checkbox__description">
+                                    <p class="menu_checkbox__desc">Au piment d'Espelette et à la truffe noire</p>
+                                    <p class="menu_checkbox__price">23€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox"/>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <div class="command_button">
+                <button class="button shadow button__command">Commander</button>
             </div>
         </main>
         <footer  class="block-padding">
-            <p>ohmyfood</p>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-            </ul>
+            <nav>
+                <a href="/" class="footer__homelink">ohmyfood</a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>

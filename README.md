@@ -34,7 +34,7 @@
 * [x] Footer mettre une balise nav
 * [x] Mettre un h3 pour le titre du footer au lieu de p
 * [x] Enlever les restau*rent* dans la css
-- [ ] Faire effet sur le coeur (se rempli petit à petit avec le dégrader)
+* [x] Faire effet sur le coeur (se rempli petit à petit avec le dégrader)
 * [x] Ecrire les commits en anglais
 
 ##A faire :

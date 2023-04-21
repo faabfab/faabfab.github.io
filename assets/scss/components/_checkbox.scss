@@ -1,0 +1,69 @@
+.heart{
+    &__home_position{
+        position: absolute;
+        right: 0px;
+        margin-right: 40px;
+        margin-top: 200px;
+        z-index: 500;
+    }
+    &__restaurant_position{
+        margin-right: 20px;
+    }
+    &_checkbox {
+        display: inline;
+        position: relative;
+        cursor: pointer;
+        &-check {
+            background-image: url('../../assets/images/Vector.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            transition: all 0.5s ease-out;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+        
+        & input[type="checkbox"] {
+            visibility: hidden;
+            &:checked ~ .heart_checkbox-check {
+                background-image: url('../../assets/images/Vector2.svg');
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.menu_checkbox{
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name{
+        margin: 0;
+        margin-top: 5px;
+        font-size: 1.2em
+    }
+    &__desc,&__price{
+        margin-top: 3px;
+        margin-bottom: 0px;        
+        font-size: 0.95em;
+    }
+    &__price{
+        font-weight: bold;
+    }
+}

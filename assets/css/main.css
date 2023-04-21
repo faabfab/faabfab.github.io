@@ -41,9 +41,11 @@ h1 {
 
 header {
   background-color: #F3F3F3;
-  padding-bottom: 50px;
 }
 
+.header__bottom_padding {
+  padding-bottom: 50px;
+}
 .header__site_title {
   font-family: "Shrikhand", cursive;
   letter-spacing: 0.03em;
@@ -53,8 +55,10 @@ header {
   justify-content: center;
   align-items: center;
   height: 63px;
-  box-shadow: 0px 2px 4px #B9B9B9;
   margin: 0px;
+}
+.header_shadow {
+  box-shadow: 0px 2px 4px #B9B9B9;
 }
 .header__location {
   background-color: #EAEAEA;
@@ -91,8 +95,27 @@ header {
   align-items: center;
 }
 
-.header_restaurent__img {
+.restaurant_header {
+  padding-bottom: 0px;
+}
+.restaurant_header__picture {
   height: 275px;
+}
+.restaurant_header__top {
+  position: relative;
+  background-color: #F3F3F3;
+  margin-top: -50px;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.restaurant_header__name {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .use__h2 {
@@ -197,42 +220,6 @@ footer a {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.card__heart {
-  position: absolute;
-  right: 0px;
-  margin-right: 40px;
-  margin-top: 200px;
-  z-index: 500;
-}
-.card__heart_checkbox {
-  display: inline;
-  position: relative;
-  cursor: pointer;
-}
-.card__heart_checkbox input[type=checkbox] {
-  visibility: hidden;
-}
-.card__heart_checkbox-check {
-  background-image: url("../../assets/images/Vector.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  transition: all 0.5s ease-out;
-}
-.card__heart_checkbox-check:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.card__heart_checkbox input:checked ~ .card__heart_checkbox-check {
-  background-image: url("../../assets/images/Vector2.svg");
-}
-.card__heart_checkbox input:checked ~ .card__heart_checkbox-check:after {
-  display: block;
-}
 
 .button {
   height: 50px;
@@ -247,4 +234,117 @@ footer a {
 }
 .button:focus, .button:hover {
   opacity: 0.8;
+}
+.button__command {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.command_button {
+  display: flex;
+  justify-content: center;
+}
+
+.heart__home_position {
+  position: absolute;
+  right: 0px;
+  margin-right: 40px;
+  margin-top: 200px;
+  z-index: 500;
+}
+.heart__restaurant_position {
+  margin-right: 20px;
+}
+.heart_checkbox {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+.heart_checkbox-check {
+  background-image: url("../../assets/images/Vector.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s ease-out;
+}
+.heart_checkbox-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.heart_checkbox input[type=checkbox] {
+  visibility: hidden;
+}
+.heart_checkbox input[type=checkbox]:checked ~ .heart_checkbox-check {
+  background-image: url("../../assets/images/Vector2.svg");
+}
+.heart_checkbox input[type=checkbox]:checked ~ .heart_checkbox-check:after {
+  display: block;
+}
+
+.menu_checkbox {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_checkbox__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menu_checkbox__description {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_checkbox__name {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+.menu_checkbox__desc, .menu_checkbox__price {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-size: 0.95em;
+}
+.menu_checkbox__price {
+  font-weight: bold;
+}
+
+.menu {
+  padding-top: 0px;
+}
+
+.restaurant_menu {
+  padding-top: 0px;
+  margin-bottom: 30px;
+}
+.restaurant_menu__entitled {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.restaurant_menu__separation {
+  width: 40px;
+  background-color: #99E2D0;
+  height: 3px;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: 0 none;
+}
+.restaurant_menu__items {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant_menu__item {
+  width: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
