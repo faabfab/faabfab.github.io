@@ -100,6 +100,7 @@ header {
 }
 .restaurant_header__picture {
   height: 275px;
+  width: 100%;
 }
 .restaurant_header__top {
   position: relative;
@@ -285,31 +286,82 @@ footer a {
   display: block;
 }
 
-.menu_checkbox {
+.menu_c {
+  position: relative;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
-.menu_checkbox__text {
+.menu_c__text {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   width: 100%;
 }
-.menu_checkbox__description {
+.menu_c__description {
   display: flex;
   justify-content: space-between;
 }
-.menu_checkbox__name {
+.menu_c__name {
   margin: 0;
   margin-top: 5px;
   font-size: 1.2em;
 }
-.menu_checkbox__desc, .menu_checkbox__price {
+.menu_c__desc, .menu_c__price {
   margin-top: 3px;
   margin-bottom: 0px;
   font-size: 0.95em;
 }
-.menu_checkbox__price {
+.menu_c__desc {
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.menu_c__price {
   font-weight: bold;
+}
+.menu_c__check {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+.menu_c_checkbox {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+.menu_c_checkbox-check {
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0px;
+  display: flex;
+  font-size: 0;
+  transition: all 0.5s ease-out;
+}
+.menu_c_checkbox-check::before {
+  content: "caca";
+  position: absolute;
+  display: none;
+  width: 80px;
+}
+.menu_c input[type=checkbox] {
+  visibility: hidden;
+  display: none;
+  transition: all 0.5s ease-out;
+}
+.menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check {
+  font-size: 1.5em !important;
+  width: 80px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check::before {
+  content: "";
+  display: block;
 }
 
 .menu {
@@ -344,7 +396,6 @@ footer a {
 .restaurant_menu__item {
   width: auto;
   background-color: white;
-  padding: 10px;
   border-radius: 15px;
   margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
