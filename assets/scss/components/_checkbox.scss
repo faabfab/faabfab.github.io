@@ -59,6 +59,8 @@
     &__description{
         display: flex;
         justify-content: space-between;
+        height: 21px;
+        overflow: hidden;
     }
     &__name{
         margin: 0;

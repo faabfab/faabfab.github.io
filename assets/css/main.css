@@ -302,6 +302,8 @@ footer a {
 .menu_c__description {
   display: flex;
   justify-content: space-between;
+  height: 21px;
+  overflow: hidden;
 }
 .menu_c__name {
   margin: 0;
