@@ -101,6 +101,8 @@ header {
 .restaurant_header__picture {
   height: 275px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurant_header__top {
   position: relative;

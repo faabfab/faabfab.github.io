@@ -4,10 +4,191 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>À la française</title>
-        <link rel="stylesheet" href="assets/css/main.css">
+        <title>La palette du goût</title>
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <script src="https://kit.fontawesome.com/c211974a1b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>À la française</h1>
+        <header class="restaurant_header">
+            <a href="/">
+                <h1 class="header__site_title">ohmyfood</h1>
+            </a>
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût" class="restaurant_header__picture">
+            <hgroup class="restaurant_header__top block-padding">
+                <h2 class="restaurant_header__name">À la française</h2>
+                <div class="heart heart__restaurant_position">
+                    <label class="heart_checkbox">
+                        <input type="checkbox" />
+                        <span class="heart_checkbox-check"></span>
+                    </label>
+                </div>
+            </hgroup>
+        </header>
+        <main class="block-padding menu">
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Entrées</h3>
+                <hr class="restaurant_menu__separation">
+                <div class="restaurant_menu__items">                   
+                    <label class="menu_c restaurant_menu__item shadow">
+                        <div class="menu_c__text">
+                            <h4 class="menu_c__name">Tartare de poulpe acidulé</h4>
+                            <div class="menu_c__description">
+                                <p class="menu_c__desc">Aux zestes d'orange</p>
+                                <p class="menu_c__price">25€</p>
+                            </div>
+                        </div>
+                        <input type="checkbox"/>
+                        <div class="menu_c_checkbox-check">
+                            <div class="menu_c__check">
+                                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </label>                   
+                    <label class="menu_c restaurant_menu__item shadow">
+                        <div class="menu_c__text">
+                            <h4 class="menu_c__name">Velouté de légumes d'antan</h4>
+                            <div class="menu_c__description">
+                                <p class="menu_c__desc">Carotte, panais, topinambour</p>
+                                <p class="menu_c__price">35€</p>
+                            </div>
+                        </div>
+                        <input type="checkbox"/>
+                        <div class="menu_c_checkbox-check">
+                            <div class="menu_c__check">
+                                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </label>                   
+                    <label class="menu_c restaurant_menu__item shadow">
+                        <div class="menu_c__text">
+                            <h4 class="menu_c__name">Soupe à l'oignon</h4>
+                            <div class="menu_c__description">
+                                <p class="menu_c__desc">Revisitée</p>
+                                <p class="menu_c__price">20€</p>
+                            </div>
+                        </div>
+                        <input type="checkbox"/>
+                        <div class="menu_c_checkbox-check">
+                            <div class="menu_c__check">
+                                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </label>                   
+                </div>
+            </section>
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Plats</h3>
+                <hr class="restaurant_menu__separation">
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Coquilles Saint-Jacques</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Accompagnées d'une purée de panais</p>
+                            <p class="menu_c__price">40€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Magret de canard</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Et parmentier de pommes de terre</p>
+                            <p class="menu_c__price">35€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Pigeonneau d’Ille-et-Vilaine</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Sur son lit de gnocchis aux légumes</p>
+                            <p class="menu_c__price">44€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+            </section>
+            <section class="restaurant_menu">
+                <h3 class="restaurant_menu__entitled">Desserts</h3>
+                <hr class="restaurant_menu__separation">
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Pétales de violettes glacés</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Et purée de noisettes</p>
+                            <p class="menu_c__price">18€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Fondant au chocolat</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Revisité</p>
+                            <p class="menu_c__price">22€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+                <label class="menu_c restaurant_menu__item shadow">
+                    <div class="menu_c__text">
+                        <h4 class="menu_c__name">Millefeuille croustillant</h4>
+                        <div class="menu_c__description">
+                            <p class="menu_c__desc">Myrtilles et pâte d'amande</p>
+                            <p class="menu_c__price">23€</p>
+                        </div>
+                    </div>
+                    <input type="checkbox"/>
+                    <div class="menu_c_checkbox-check">
+                        <div class="menu_c__check">
+                            <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </label>                   
+
+            </section>
+            <div class="command_button">
+                <button class="button shadow button__command">Commander</button>
+            </div>
+        </main>
+        <footer  class="block-padding">
+            <nav>
+                <a href="/" class="footer__homelink">ohmyfood</a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
