@@ -341,12 +341,19 @@ footer a {
   top: 0;
   left: 0;
   width: 0px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   display: flex;
-  font-size: 0;
   transition: all 0.5s ease-out;
 }
+.menu_c_checkbox-check i {
+  display: none;
+  font-size: 1.5em;
+  transform: rotate(180deg);
+}
 .menu_c_checkbox-check::before {
-  content: "caca";
+  content: "";
   position: absolute;
   display: none;
   width: 80px;
@@ -357,11 +364,12 @@ footer a {
   transition: all 0.5s ease-out;
 }
 .menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check {
-  font-size: 1.5em !important;
   width: 80px;
-  background-color: #99E2D0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+}
+.menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check i {
+  display: block;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
 }
 .menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check::before {
   content: "";

@@ -90,20 +90,23 @@
         position: relative;
         cursor: pointer;
         &-check {
-            //background-image: url('../../assets/images/Vector.svg');
             background-repeat: no-repeat;
             position: relative;
             top: 0;
             left: 0;
             width: 0px;
+            background-color: $vert;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
             display: flex;
-            font-size: 0;
-            //font-size: 0px;
-            //height: 50px;
-            //width: 100%;
+            & i{
+                display: none;
+                font-size: 1.5em;
+                transform: rotate(180deg);
+            }
             transition: all 0.5s ease-out;
             &::before {
-                content: "caca";
+                content: "";
                 position: absolute;
                 display: none;
                 width: 80px;
@@ -115,13 +118,13 @@
         visibility: hidden;
         display: none;
         transition: all 0.5s ease-out;
-        &:checked ~ .menu_c_checkbox-check {
-            //background-image: url('../../assets/images/Vector2.svg');
-            font-size: 1.5em !important;
-            width: 80px;
-            background-color: $vert;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
+        &:checked ~ .menu_c_checkbox-check {           
+            width: 80px;           
+            & i{
+                display: block;
+                transform: rotate(0deg);
+                transition: transform 0.5s ease-in-out;
+            }
             &::before {
                 content: '';
                 display: block;
