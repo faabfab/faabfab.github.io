@@ -72,39 +72,45 @@
         margin-bottom: 0px;        
         font-size: 0.95em;
     }
+    &__content{
+        overflow: hidden;
+    }
     &__desc{
         text-overflow: ellipsis;
         width: 100%;
+        //white-space: nowrap;
+        overflow: hidden;
     }
     &__price{
         font-weight: bold;
     }
     &__check{
         display: flex;
-        align-items: center;
-        margin: auto;
-        color: white;
+    }
+    &__input{
+        background-color: $vert;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
     &_checkbox {
         display: inline;
         position: relative;
         cursor: pointer;
         &-check {
-            background-repeat: no-repeat;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            color: white;
             position: relative;
             top: 0;
             left: 0;
             width: 0px;
-            background-color: $vert;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            display: flex;
-            & i{
-                display: none;
-                font-size: 1.5em;
-                transform: rotate(180deg);
-            }
-            transition: all 0.5s ease-out;
+            overflow: hidden;
+            transform: rotate(0deg);
+            font-size: 1.5em;
+            transition: all 0.5s ease-in-out;
             &::before {
                 content: "";
                 position: absolute;
@@ -112,25 +118,15 @@
                 width: 80px;
             }
         }
-        
+
     }
     & input[type="checkbox"] {
         visibility: hidden;
         display: none;
-        transition: all 0.5s ease-out;
         &:checked ~ .menu_c_checkbox-check {           
             width: 80px;           
-            & i{
-                display: block;
-                transform: rotate(0deg);
-                transition: transform 0.5s ease-in-out;
-            }
-            &::before {
-                content: '';
-                display: block;
-            }
+            transform: rotate(360deg);
         }
-
     }
 }
 

@@ -3,6 +3,13 @@ header{
     
 }
 .header{
+    &__arrow{
+        font-size: 1.3em;
+        position: absolute;
+        z-index: 500;
+        top: 20px;
+        left: 20px;
+    }
     &__bottom_padding{
         padding-bottom: 50px; 
     }
@@ -71,7 +78,7 @@ header{
         border-radius: 40px 40px 0 0;
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
     }
     &__name{
         font-family: "Shrikhand", cursive;
