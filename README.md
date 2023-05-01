@@ -53,13 +53,13 @@
 * **Pages restaurants :**
 * [x] Mettre la flèche de retour à côté du titre
 * [x] Enlever la `<div class="menu_c__check">`
-- [ ] **A voir:** enlever le/les `::before`
+* [x] **A voir:** enlever le/les `::before`
 * [] texte menu sur les paragraphes : `text-overflow; white-space: nowrap; overflow: hidden;`
 * [x] Enlever `<hgroup>` remplacer par une `<div>`
 * [x] Remonter le coeur dans les restaux
 
 ###A faire :
-- [ ] Faire la rotation sur `<i>`
+* [x] Faire la rotation sur `<i>`
 - [ ] Sur les menus faire des apparitions de boîtes "en escalier" (*Apparition par blocs de catégories ou à la suite*)
 - [ ] Faire css pour tablettes et desktop
 

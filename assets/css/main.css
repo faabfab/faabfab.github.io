@@ -295,87 +295,74 @@ footer a {
   display: block;
 }
 
-.menu_c {
-  position: relative;
-  margin: 0px;
+.item_menu {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  cursor: pointer;
 }
-.menu_c__text {
+.item_menu__container {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  justify-content: space-between;
+}
+.item_menu__container__texts {
   width: 100%;
+  padding: 10px;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
 }
-.menu_c__description {
-  display: flex;
-  justify-content: space-between;
-  height: 21px;
-  overflow: hidden;
-}
-.menu_c__name {
+.item_menu__container__texts__title {
   margin: 0;
   margin-top: 5px;
   font-size: 1.2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu_c__desc, .menu_c__price {
-  margin-top: 3px;
-  margin-bottom: 0px;
+.item_menu__container__texts__descrition {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.item_menu__container__texts__descrition__text, .item_menu__container__texts__descrition__price {
+  margin: 0px;
   font-size: 0.95em;
 }
-.menu_c__content {
-  overflow: hidden;
-}
-.menu_c__desc {
+.item_menu__container__texts__descrition__text {
   text-overflow: ellipsis;
-  width: 100%;
   overflow: hidden;
+  height: 21px;
 }
-.menu_c__price {
+.item_menu__container__texts__descrition__price {
   font-weight: bold;
 }
-.menu_c__check {
-  display: flex;
-}
-.menu_c__input {
+.item_menu__container__check {
+  overflow: hidden;
+  width: 0px;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-.menu_c_checkbox {
-  display: inline;
-  position: relative;
-  cursor: pointer;
-}
-.menu_c_checkbox-check {
-  height: 70px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: auto;
+  align-items: center;
   color: white;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 0px;
-  overflow: hidden;
-  transform: rotate(0deg);
   font-size: 1.5em;
   transition: all 0.5s ease-in-out;
 }
-.menu_c_checkbox-check::before {
-  content: "";
+.item_menu__container__check_icon {
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+.item_menu input[type=checkbox] {
   position: absolute;
-  display: none;
-  width: 80px;
-}
-.menu_c input[type=checkbox] {
   visibility: hidden;
-  display: none;
 }
-.menu_c input[type=checkbox]:checked ~ .menu_c_checkbox-check {
+.item_menu input[type=checkbox]:checked ~ .item_menu__container__texts {
+  width: 70%;
+}
+.item_menu input[type=checkbox]:checked ~ .item_menu__container__check {
+  overflow: visible;
   width: 80px;
+}
+.item_menu input[type=checkbox]:checked ~ .item_menu__container__check .item_menu__container__check_icon {
   transform: rotate(360deg);
 }
 
