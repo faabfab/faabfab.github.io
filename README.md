@@ -60,7 +60,7 @@
 
 ###A faire :
 * [x] Faire la rotation sur `<i>`
-- [ ] Sur les menus faire des apparitions de boîtes "en escalier" (*Apparition par blocs de catégories ou à la suite*)
+* [x] Sur les menus faire des apparitions de boîtes "en escalier" (*Apparition par blocs de catégories ou à la suite*)
 - [ ] Faire css pour tablettes et desktop
 
 ###Issus du guide d'étape

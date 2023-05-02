@@ -1,6 +1,19 @@
 .menu{
     padding-top: 0px;
 }
+
+@keyframes slide-in {
+    from {
+      transform: translateY(70%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+
 .restaurant_menu{
     padding-top: 0px;
     margin-bottom: 30px;
@@ -30,5 +43,20 @@
         background-color: white;
         border-radius: 15px;
         margin-bottom: 10px;
+        &-animation1{
+            animation: slide-in 800ms;
+            animation-timing-function: linear;
+        }
+        &-animation2{
+            animation: slide-in 900ms;
+            animation-timing-function: linear;
+        }
+        &-animation3{
+            animation: slide-in 1000ms;
+            animation-timing-function: linear;
+        }&-animation4{
+            animation: slide-in 1100ms;
+            animation-timing-function: linear;
+        }
     }
 }

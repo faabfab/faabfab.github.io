@@ -370,6 +370,16 @@ footer a {
   padding-top: 0px;
 }
 
+@keyframes slide-in {
+  from {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 .restaurant_menu {
   padding-top: 0px;
   margin-bottom: 30px;
@@ -400,4 +410,20 @@ footer a {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 10px;
+}
+.restaurant_menu__item-animation1 {
+  animation: slide-in 800ms;
+  animation-timing-function: linear;
+}
+.restaurant_menu__item-animation2 {
+  animation: slide-in 900ms;
+  animation-timing-function: linear;
+}
+.restaurant_menu__item-animation3 {
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
+}
+.restaurant_menu__item-animation4 {
+  animation: slide-in 1100ms;
+  animation-timing-function: linear;
 }/*# sourceMappingURL=main.css.map */
