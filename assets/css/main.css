@@ -356,11 +356,11 @@ footer a {
   visibility: hidden;
 }
 .item_menu input[type=checkbox]:checked ~ .item_menu__container__texts {
-  width: 70%;
+  width: 75%;
 }
 .item_menu input[type=checkbox]:checked ~ .item_menu__container__check {
   overflow: visible;
-  width: 80px;
+  width: 60px;
 }
 .item_menu input[type=checkbox]:checked ~ .item_menu__container__check .item_menu__container__check_icon {
   transform: rotate(360deg);

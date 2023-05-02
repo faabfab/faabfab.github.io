@@ -101,11 +101,11 @@
         position: absolute; 
         visibility: hidden;
         &:checked ~ .item_menu__container__texts{
-            width: 70%;
+            width: 75%;
         }
         &:checked ~ .item_menu__container__check{
             overflow: visible;
-            width: 80px;
+            width: 60px;
         }
         &:checked  ~ .item_menu__container__check .item_menu__container__check_icon{
             transform: rotate(360deg);

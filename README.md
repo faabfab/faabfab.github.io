@@ -54,7 +54,7 @@
 * [x] Mettre la flèche de retour à côté du titre
 * [x] Enlever la `<div class="menu_c__check">`
 * [x] **A voir:** enlever le/les `::before`
-* [] texte menu sur les paragraphes : `text-overflow; white-space: nowrap; overflow: hidden;`
+* [x] texte menu sur les paragraphes : `text-overflow; white-space: nowrap; overflow: hidden;`
 * [x] Enlever `<hgroup>` remplacer par une `<div>`
 * [x] Remonter le coeur dans les restaux
 
