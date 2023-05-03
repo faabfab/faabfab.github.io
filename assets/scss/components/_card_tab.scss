@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 45%;
+        &__new{
+            right: inherit;
+            margin-left: 33%;
+        }
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .card{
+        &__new{
+            right: inherit;
+            margin-left: 34%;
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .card{
+        &__new{
+            right: inherit;
+            margin-left: 395px;
+        }
+    }
+
+}

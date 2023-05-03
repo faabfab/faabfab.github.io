@@ -1,0 +1,24 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .heart{
+        &__home{
+            &_position{
+                right: inherit;
+                padding-left: 38%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .heart{
+        &__home{
+            &_position{
+                right: inherit;
+                padding-left: 435px;
+            }
+        }
+    }
+
+}
