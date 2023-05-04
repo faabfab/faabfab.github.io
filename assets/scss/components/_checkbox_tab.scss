@@ -1,5 +1,17 @@
+// Tablette et desktop
+
+@media (min-width: 768px){
+   
+    .item_menu{
+        & input[type=checkbox]:checked ~ .item_menu__container__texts {
+        width: 87%;}
+    }
+
+}
+
+
+// Tablettes
 @media (min-width: 768px) and (max-width: 1024px){
-    
     .heart{
         &__home{
             &_position{
@@ -10,8 +22,8 @@
     }
 }
 
+// Desktop
 @media (min-width: 1024px) {
-
     .heart{
         &__home{
             &_position{

@@ -88,3 +88,34 @@ header{
         margin-bottom: 0px;
     }
 }
+
+
+// Tablette et desktop
+
+@media (min-width: 768px){
+    header{
+        background-color: white;
+    }
+    .restaurant_header{
+        &__picture{
+            height: 385px;
+        }
+        &__top{
+            justify-content: center;
+            padding-bottom: 60px;
+        }
+        &__name{
+            margin-right: 25px;
+        }
+    }
+}
+
+
+// Tablettes
+@media (min-width: 768px) and (max-width: 1024px){
+}
+
+// Desktop
+@media (min-width: 1024px) {
+
+}

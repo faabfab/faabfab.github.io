@@ -27,6 +27,8 @@ footer{
         & nav{
             display: flex;
             flex-direction: row-reverse;
+            max-width: none !important;
+            margin-right: 80px !important;
             & ul{
                 margin-top: 0px;
                 display: flex;
