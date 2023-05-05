@@ -115,6 +115,25 @@
     }
 }   
 
+
+@keyframes letter_move {
+  from {
+    bottom: 0em;
+  }
+  to {
+    bottom: 0.5em;
+  }
+}
+
+@keyframes flame_move {
+  from{
+    font-size: 1em;
+  }
+  to{
+    font-size: 1.5em;
+  }
+}
+
 .loader{
     position: fixed;
     width: 100%;
@@ -124,14 +143,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: loading-close 10s;
-    animation-timing-function: steps(1, end);
-    opacity: 0;
+    //animation: loading-close 10s;
+    //animation-timing-function: steps(1, end);
+    //opacity: 0;
     z-index: -100;
     //display: none;
     &_ohmyfood{
         font-family: 'Shrikhand', cursive;
         font-size : 2em;
         color: $header-grey;
+        margin-top: 50px;
+        & .letter{
+          position: relative;
+          animation-name: letter_move;
+          animation-duration: 500ms;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out;
+        }
+        & .letter01 { animation-delay: 0; }
+        & .letter02 { animation-delay: 100ms; }
+        & .letter03 { animation-delay: 200ms; }
+        & .letter04 { animation-delay: 300ms; }
+        & .letter05 { animation-delay: 400ms; }
+        & .letter06 { animation-delay: 500ms; }
+        & .letter07 { animation-delay: 600ms; }
+        & .letter08 { animation-delay: 700ms; }
+    }
+    &_separation{
+      height: 5px;
+      margin-top: -10px;
+      background-color: black;
+    }
+    &_bottom{
+      //height: 15px;
+      //color: red;
+      background: linear-gradient(to bottom,#fcff37 0%,#ff1e1e 100%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      height: 30px;
+      position: relative;
+      top: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &-flip{
+        animation: flame_move 500ms ease-in-out  infinite alternate;
+        & i{
+        }
+      }
+      &-delay{
+        animation-delay: 500ms;
+      }
     }
 }

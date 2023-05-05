@@ -61,8 +61,7 @@
 ###A faire :
 * [x] Faire la rotation sur `<i>`
 * [x] Sur les menus faire des apparitions de boîtes "en escalier" (*Apparition par blocs de catégories ou à la suite*)
-- [ ] Faire css pour tablettes et desktop
-
+- [x] Faire css pour tablettes et deskt
 ###Issus du guide d'étape
-- [ ] **Faire un loader**
+* [x] **Faire un loader**
 
