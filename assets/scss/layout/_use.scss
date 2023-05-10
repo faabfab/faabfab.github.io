@@ -39,3 +39,38 @@
         }
     }
 }
+
+// tab & desk
+@media (min-width: 768px) {
+    .use{
+        &__list
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
+//tab 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .use{
+        &__list{
+            &_item{
+                width: auto;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+//desk
+@media (min-width: 1024px) {
+    .use{
+        &__list{
+            &_item{
+                width: 32%;
+            }
+        }
+    }
+}

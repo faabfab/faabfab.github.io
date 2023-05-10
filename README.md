@@ -49,7 +49,6 @@
 * **Index.html :**
 * [x] Enlever les liens dans la partie **Fonctionnalité**
 
-
 * **Pages restaurants :**
 * [x] Mettre la flèche de retour à côté du titre
 * [x] Enlever la `<div class="menu_c__check">`
@@ -65,3 +64,13 @@
 ###Issus du guide d'étape
 * [x] **Faire un loader**
 
+***
+##Session 4
+
+###A corriger :
+* [x] Ralentir les animations sur cartes faire plus "escalier"
+* [x] Centrer la flèche de retour sur les restaurants
+* [x] Bouton "commander" mettre le cursor et classe commune + padding
+
+###A faire :
+* [x] Mettre le loading sur la page d'accueil : jouer su z-index et display
