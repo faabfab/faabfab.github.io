@@ -44,11 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //animation: loading-close 10s;
-    //animation-timing-function: steps(1, end);
-    //opacity: 0;
     animation: loader-close 5.5s ease-in-out 2.5s forwards;
-    //display: none;
     &_ohmyfood{
         font-family: 'Shrikhand', cursive;
         font-size : 2em;
@@ -77,8 +73,6 @@
       background-color: black;
     }
     &_bottom{
-      //height: 15px;
-      //color: red;
       background: linear-gradient(to bottom,#fcff37 0%,#ff1e1e 100%);
       background-clip: border-box;
       -webkit-background-clip: text;
