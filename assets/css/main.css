@@ -195,6 +195,23 @@ header {
   font-weight: normal;
 }
 
+@media (min-width: 768px) {
+  .use__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .use__list_item {
+    width: auto;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .use__list_item {
+    width: 32%;
+  }
+}
 main {
   background-color: #F3F3F3;
   padding-bottom: 45px !important;
@@ -280,6 +297,32 @@ footer a {
   margin-bottom: 5px;
 }
 
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 45%;
+  }
+  .card__new {
+    right: inherit;
+    margin-left: 33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__new {
+    right: inherit;
+    margin-left: 34%;
+  }
+}
+@media (min-width: 1024px) {
+  .card__new {
+    right: inherit;
+    margin-left: 395px;
+  }
+}
 .button {
   height: 50px;
   border-radius: 25px;
@@ -416,6 +459,23 @@ footer a {
   transform: rotate(360deg);
 }
 
+@media (min-width: 768px) {
+  .item_menu input[type=checkbox]:checked ~ .item_menu__container__texts {
+    width: 87%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heart__home_position {
+    right: inherit;
+    padding-left: 38%;
+  }
+}
+@media (min-width: 1024px) {
+  .heart__home_position {
+    right: inherit;
+    padding-left: 435px;
+  }
+}
 @keyframes loader-close {
   0% {
     z-index: 9999;
@@ -425,8 +485,7 @@ footer a {
   }
   100% {
     opacity: 0;
-    display: none;
-    z-index: -1;
+    z-index: -10;
     visibility: hidden;
   }
 }
@@ -447,9 +506,9 @@ footer a {
   }
 }
 .loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #353535;
   display: flex;
   flex-direction: column;
@@ -589,74 +648,5 @@ footer a {
   }
   .restaurant_menu {
     width: 635px;
-  }
-}
-/*@media (min-width: 768px) {
-    .use{
-        &__list{
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
-*/
-@media (min-width: 768px) {
-  .use__list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .use__list_item {
-    width: auto;
-    padding-right: 30px;
-  }
-}
-@media (min-width: 1024px) {
-  .use__list_item {
-    width: 32%;
-  }
-}
-@media (min-width: 768px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .card {
-    width: 45%;
-  }
-  .card__new {
-    right: inherit;
-    margin-left: 33%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .card__new {
-    right: inherit;
-    margin-left: 34%;
-  }
-}
-@media (min-width: 1024px) {
-  .card__new {
-    right: inherit;
-    margin-left: 395px;
-  }
-}
-@media (min-width: 768px) {
-  .item_menu input[type=checkbox]:checked ~ .item_menu__container__texts {
-    width: 87%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .heart__home_position {
-    right: inherit;
-    padding-left: 38%;
-  }
-}
-@media (min-width: 1024px) {
-  .heart__home_position {
-    right: inherit;
-    padding-left: 435px;
   }
 }/*# sourceMappingURL=main.css.map */
