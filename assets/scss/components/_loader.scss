@@ -58,7 +58,7 @@
           animation-direction: alternate;
           animation-timing-function: ease-in-out;
         }
-        & .letter01 { animation-delay: 0; }
+        & .letter01 { animation-delay: 0ms; }
         & .letter02 { animation-delay: 100ms; }
         & .letter03 { animation-delay: 200ms; }
         & .letter04 { animation-delay: 300ms; }
