@@ -1,7 +1,7 @@
 
 @keyframes loader-close {
   0% {
-    z-index: 9999;
+    z-index: 19999;
   }
   
   95% {
@@ -34,7 +34,9 @@
 }
 
 .loader{
-    position: fixed;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
     width: 100%;
     height: 100vh;
     background-color: $header-grey-font;
@@ -91,3 +93,4 @@
       }
     }
 }
+

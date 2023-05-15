@@ -480,7 +480,7 @@ footer a {
 }
 @keyframes loader-close {
   0% {
-    z-index: 9999;
+    z-index: 19999;
   }
   95% {
     opacity: 1;
@@ -508,7 +508,9 @@ footer a {
   }
 }
 .loader {
-  position: fixed;
+  z-index: 20;
+  position: absolute;
+  top: 0px;
   width: 100%;
   height: 100vh;
   background-color: #353535;
